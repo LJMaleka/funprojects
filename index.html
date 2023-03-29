@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Symptom Checker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Symptom Checker</h1>
+      <form id="symptom-form">
+        <label for="symptoms">Select your symptoms:</label>
+        <select id="symptoms" name="symptoms" multiple>
+          <option value="fever">Fever</option>
+          <option value="cough">Cough</option>
+          <option value="headache">Headache</option>
+          <option value="nausea">Nausea</option>
+          <option value="fatigue">Fatigue</option>
+          <option value="muscle-pain">Muscle pain</option>
+        </select>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required />
+
+        <label for="race">Race:</label>
+        <input type="text" id="race" name="race" required />
+
+        <label for="bmi">BMI:</label>
+        <input type="number" id="bmi" name="bmi" required />
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required />
+        <label for="female">Female</label>
+
+        <label for="location">Physical location:</label>
+        <input type="text" id="location" name="location" required />
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
